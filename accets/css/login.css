@@ -1,0 +1,101 @@
+/* Login Page Styles */
+     
+   * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color:#536976;
+      /* background: linear-gradient(90deg,rgba(51, 131, 163, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      backdrop-filter: blur(5px);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 25px;
+      color: #fdb600;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgb(40, 39, 36);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ffae17;
+      transition: border 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+      background: #f4f4f4;;
+    }
+
+    input:focus {
+      border-color: #0072ff;
+      outline: none;
+      box-shadow: 0 10px 25px rgba(135, 164, 216, 0.648);
+      
+    }
+
+    input[type="checkbox"] {
+      margin-top: 20px;
+      transform: scale(1.2);
+    }
+
+    label {
+      font-size: 14px;
+      color: white;
+      margin-left: 8px;
+    }
+
+    button {
+      background: rgb(208, 179, 13);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #092a94;
+    }
+
+    #message {
+      margin-top: 15px;
+      color: rgb(31, 151, 10);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      form {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+ 
