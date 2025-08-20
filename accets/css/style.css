@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+
+    /* hur satiton lightness alpha */
+    --primary-color:#0a2742f5;
+    --secondary-color:#70142ef5;
+    --fruit-color:rgb(219, 50, 16);
+}
+
+*{
+    box-sizing: border-box;
+}
+  
+ 
+.navbar{
+  background-color: rgb(14, 43, 59);
+}
+     .card  {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.535) 0%, rgba(240, 201, 239, 0.984) 40%, rgba(129, 206, 225, 0.25) 80%, rgba(235, 166, 138, 0.25) 100%);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.12) inset;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-radius: 18px;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      transition: background 0.3s, transform 0.3s;
+      overflow: hidden;
+    }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        z-index: 2;
+        cursor: pointer;
+        transform-origin: center center;
+       }
+
+    .btnn{
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.535) 0%, rgba(240, 201, 239, 0.984) 40%, rgba(129, 206, 225, 0.25) 80%, rgba(235, 166, 138, 0.25) 100%);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.12) inset;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-radius: 18px;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      transition: background 0.3s, transform 0.3s;
+      overflow: hidden;
+    }
+      
+/*  Start Titles border  */
+ .titles {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 1rem;
+}
+
+.titles::before,
+.titles::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border: 2px solid var(--fruit-color);
+}
+
+.titles::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.titles::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+/*  End Titles border  */
+ 
+ /* Start Image section  */
+ /* Start gallery  file section  */
+
+.images{
+   background-color: rgba(16, 15, 15, 0.5);
+
+} 
+.img-section {
+  /* background-color: black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items:start;
+  gap: 1.7rem;
+}
+
+ .img-section .card {
+  background-color: rgb(137, 143, 143);
+  border: none;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 16px;
+}
+
+.img-section .card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(0.5);
+
+}
+
+.img-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow:  1px 1px   8px 8px rgba(51, 113, 144, 0.899);
+  filter: brightness(1.8);
+
+  
+ 
+}
+
+.img-section .card:hover img {
+  transform: scale(1.05);
+}
+
+  
+
+ /* End gallery  file section  */
+
+ /* Start Quotes Section */
+
+ .quotes{
+  /* background-color: #bc58aadd; */
+  background-color: rgba(0, 0, 0, 0.5);
+
+ }
+
+.quote-card {
+  position: relative;
+  backdrop-filter: blur(8px); 
+  background-color: rgba(0, 0, 0, 0.3); 
+   padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+  overflow: hidden;
+}
+.quote-card .quote-icon-left,
+.quote-card .quote-icon-right {
+  position: absolute;
+  font-size: 1rem;
+  color: #ffc107;
+}
+.quote-card .quote-icon-left {
+  top: 10px;
+  left: 20px;
+}
+
+.quote-card .quote-icon-right {
+  bottom: 10px;
+  right: 15px;
+}
+ .quote-card:hover{
+  /* background-color: #132138; */
+  /* background-color: #132138; */
+  background-color: rgba(0, 0, 0, 0.601);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+   
+}
+ /* End Quotes Section */
+
+  .maps{
+      width: 100%;
+      /* height: 250px; */
+       height: 50vh;
+       
+        }
+        
+ .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: set height if you want vertical centering */
+  min-height: 400px;
+}
+
+
+.video-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content; /* or set a specific width */
+}

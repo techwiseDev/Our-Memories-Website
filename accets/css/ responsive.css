@@ -1,0 +1,260 @@
+  /* # Media queries (optional) */
+
+
+  /* style */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+
+    /* hur satiton lightness alpha */
+    --primary-color:#0a2742f5;
+    --secondary-color:#944a5ff5;
+    --fruit-color:tomato;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Source Sans 3", serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+
+    background-color: #f4f4f4;
+    /* background-color: darkgray; */
+    /* background:url(../assets/img/banner/banner2.jpg);
+    background: cover;
+    background-repeat:no-repeat ; */
+    font-size: 12px;
+
+
+    padding: 0;
+    margin: 0;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+/* Start Site Setting */
+.sitesetting{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(7, 4, 4);
+
+    position: fixed;
+    right:10px;
+    bottom:50px;
+
+    text-align: center;
+    line-height: 30px;
+
+    z-index: 100;
+}
+.sitesetting:hover{
+    opacity: 3;
+}
+
+.ani-roate{
+    animation-name: myanrotes;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes myanrotes {
+    form{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* End Site Setting */
+
+/* Start Right Navbar */
+.right-pannels{
+     width: 200px;
+     height: 80vh;
+    /* column-count:  ပေးခဲ့ရင် min width, min heith no working  !!!; */
+    background-color: #8e6767;
+    box-shadow: 0 0 10px rgb(7, 4, 4);
+
+    position: absolute;
+    right: 0;
+    top:70px;
+
+    padding: 15px;
+   
+
+    z-index:200;
+    
+    display: none;
+    transition: display .5s ease-in ;
+}
+.right-pannels h6{
+    background-color: steelblue;
+    color: floralwhite;
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.right-pannels .themecolors{
+    column-count: 5;
+}
+
+body.show-nav > .right-pannels{
+    display:block;
+}
+/* Start Riht Navbar */
+/* Start NavBar */
+ /* start left side bar */
+.leftsidebar{
+
+    background-color: rgb(7, 4, 4);
+    
+}
+
+.nav-item.nav-categories{
+    color: hwb(0 93% 0%);
+    opacity:  .9;
+
+    margin: 10px 0 ;
+
+}
+.nav-item .slidebarlinks{
+    opacity: 0.9;
+    position: relative;
+
+
+}
+
+.nav-item .slidebarlinks:hover{
+    opacity: 1;
+    background-color: #555;
+}
+.nav-item .slidebarlinks .mores{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+    
+    transform: translateY(-50%);
+}
+
+.slidebarlinks.currents{ 
+    background-color: #8b7f7f;
+    box-shadow:  1px 0 5px #222;
+    border-radius: 5px;
+}
+ /* End left side bar */
+
+ /* start notify & user account  */
+ .dropdowns{
+    position: relative;
+ }
+
+
+.dropdowns .dropdown-contents{
+    min-width: 230px;
+    background-color: #f6f6f6;
+
+    position: absolute;
+    left: 50;
+
+
+    transform: translate(-50%);
+
+    z-index: 999;
+    display: none;
+
+}
+
+
+.dropdowns .dropdown-contents a{
+    color: #000;
+     padding: 10px;
+}
+
+.dropdowns .dropdown-contents a:hover{
+     background-color: #ddd;
+}
+
+.dropdowns .dropdown-contents.show{
+   display: block;
+}
+
+.navbar .close-btns{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    line-height: 19px;
+    border-radius: 50%; 
+    outline: none;
+    cursor: pointer;
+
+
+    margin-right: 3px;
+
+    display: none;
+}
+
+@media (max-width:768px){
+    .navbar .close-btns{
+        display: block;
+    }
+}
+ /* End  notify & user account  */
+
+/* End NavBar */
+
+
+
+/* Start Content Area */
+
+
+/* Start ShortCut Area */
+.border-left-primary{
+    border-left: 2px solid rgb(38, 141, 225);
+    /* border-top: 2px solid rgb(225, 38, 175); */
+    
+
+
+
+
+
+}
+
+
+.border-left-warinng{
+
+    border-left: 2px solid gold;
+     
+
+}
+
+.border-left-success{
+    border-left: 2px solid green;
+
+}
+
+.border-left-danger{
+    border-left: 2px solid rgb(62, 4, 4);
+}
+
+/* End ShortCut Area */
+
+
+/* End Content Area */
+  
+
+
+
+

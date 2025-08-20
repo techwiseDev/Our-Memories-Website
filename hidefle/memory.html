@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May For Anniversary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="../accets/images/fav/may9.jpg" type="image/png" sizes="16x16" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link  href="../accets/css/dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="../accets/css/style.css" rel="stylesheet" type=" text/css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+      .card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.535) 0%, rgba(240, 201, 239, 0.984) 40%, rgba(129, 206, 225, 0.25) 80%, rgba(235, 166, 138, 0.25) 100%);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(255, 255, 255, 0.12) inset;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-radius: 18px;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      transition: background 0.3s, transform 0.3s;
+      overflow: hidden;
+    }
+      .card:hover {
+        background-color: #f523dd;
+        transform: scale(1.05);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        z-index: 2;
+        cursor: pointer;
+        transform-origin: center center;
+      }
+      
+    </style>
+     
+    <body>
+  
+<!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg   fixed-top">
+  <div class="container-fluid">
+    <!-- Logo or Brand Name -->
+    <a class="navbar-brand fw-bold" href="#"> </a>
+
+    <!-- Toggle button (for mobile view) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon "></span> 
+    </button>
+
+    <!-- Right side (icons, user) -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item me-3">
+
+          <a class="nav-link" href="#"><i class= "fas fa-bell text-light"></i></a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="#"><i class="fas fa-cog text-light "></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="../accets/images/fav/may5.jpg" class="rounded-circle" width="30" height="30" alt="user">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Toggle Button (Mobile Only) -->
+    <button class="sidebar-toggle-btn d-lg-none" id="sidebarToggleBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- Sidebar Start -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header d-flex align-items-center justify-content-between px-3 py-2">
+            <div class="d-flex align-items-center">
+                     <img src="../accets/images/fav/fav.png" alt="May" class="img-fluid">
+          <div class="ms-2">
+    <div class="sidebar-title d-none d-sm-block">MAY</div>
+    <div class="sidebar-desc d-none d-sm-block"> MY FRIEND</div>
+    <!-- Mobile View Text -->
+    <div class="sidebar-title d-block d-sm-none text-white small">MAY </div>
+    <div class="sidebar-desc d-block d-sm-none text-white small">I LOVE MY FRIEND </div>
+
+
+</div>
+            </div>
+            
+            <!-- Close Button (Mobile) -->
+            <button id="sidebarCloseBtn" class="btn btn-link text-white d-lg-none" style="font-size: 1.5rem;">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="px-3 py-2">
+            <input type="text" class="form-control form-control-sm" placeholder="Search...">
+        </div>
+
+         
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="../index.html" class="nav-link active"><i class="fas fa-home me-2"></i>Home</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#memoryMenu" role="button">
+                    <i class="fas fa-heart me-2"></i>Our Memory <i class="fas fa-angle-down float-end"></i>
+                </a>
+                <div class="collapse" id="memoryMenu">
+                    <ul class="nav flex-column ms-3">
+                        <li class="nav-item"><a href="./memory.html" class="nav-link">Texts</a></li>
+                        <li class="nav-item"><a href="./memory.html" class="nav-link">Funny Jokes</a></li>
+                    </ul>
+                </div>
+
+                
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#imageMenu" role="button">
+                    <i class="fas fa-image me-2"></i>Image <i class="fas fa-angle-down float-end"></i>
+                </a>
+                <div class="collapse" id="imageMenu">
+                    <ul class="nav flex-column ms-3">
+                        <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="./slideshow.html" class="nav-link">Slideshow</a></li>
+                    </ul>
+                </div>
+            </li>
+           
+      
+
+            </li>
+            <li class="nav-item"><a href="./gallery.html" class="nav-link"><i class="fas fa-quote-left me-2"></i>Quotes</a></li>
+            <li class="nav-item"><a href="./videos.html" class="nav-link"><i class="fas fa-video me-2"></i>Videos</a></li>
+            <li class="nav-item"><a href="../birthday.html" class="nav-link"><i class="fas fa-birthday-cake me-2"></i>Birthday</a></li>
+        </ul>
+
+        <div class="nav-category">Contact</div>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#contactMenu" role="button">
+                    <i class="fas fa-address-book me-2"></i>Reach Me <i class="fas fa-angle-down float-end"></i>
+                </a>
+                <div class="collapse" id="contactMenu">
+                    <ul class="nav flex-column ms-3">
+                        <li class="nav-item"><a href="./research.html" class="nav-link">Phone / Email</a></li>
+                        <li class="nav-item"><a href="./research.html" class="nav-link">Telegram / Facebook</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer text-center">
+            &copy; 2025 May Anniversary
+        </div>
+    </nav>
+    <!-- Sidebar End -->
+ 
+
+    <!-- ======== -->
+ 
+ 
+<!-- Start Our Memories Section -->
+<section class="py-5  ">
+  <div class="container px-4">
+    <!-- Start Title -->
+    <div class="text-center mt-4">
+      <h3 class="titles text-white "> Our Memories</h3>
+    <p></p>
+    </div>
+    <!-- End Title -->
+    
+    <div class="row g-4 justify-content-end ">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-5 ">
+        <div class="card p-4 shadow-sm border-0  h-100   ">
+          <h5 class="fw-bold text-secondary"> <i class="fas fa-calendar"></i> First Meet-up</h5>
+          <ul class="list-unstyled">
+            <li><strong>Date/Place:</strong> June 23, 2023 (Telegram & Zoom)</li>
+            <li class="text-muted"> စာမသိလို့သွားမေးခြင်း …</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-calendar"></i> Date Period</h5>
+          <ul class="list-unstyled">
+            <li> Unicode မရတဲ့ဖုန်းနဲ့ပို့ရတာတွေနဲ့ ပုံစာရေး img ထဲလှမ်းပို့တာ...</li>
+            
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i> School Project</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-1</strong></li>
+            <li> Grade-9: မြတ်ဆရာပူဇော်ပွဲ project, video edit, ဖိတ်စာရေး…</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i> School Projects</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-2</strong></li>
+            <li> Grade-10: Essay – Life is Better in the City Than in the Rural Area</li>
+          </ul>
+        </div>
+      </div>
+  
+        <!-- Card 5 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i> School Projects</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-3</strong></li>
+            <li> Chemistry</li>
+             <li> Grade -11  </li>
+            <li>Musical Element song…. video  Edit </li>
+          </ul>
+        </div>
+      </div>
+  
+ 
+        <!-- Card 6 -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i> School Projects</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-4</strong></li>
+            <li> Myanmar</li>
+             <li> Grade -11  </li>
+            <li>Roots of Future</li>
+          </ul>
+        </div>
+      </div>
+  
+  
+  <!-- Card -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"> <i class="fas fa-school text-secondary "></i> School Project</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-5</strong></li>
+            <li> Grade -11 Math</li>
+            <li class="text-muted"> Group name -Grovvy </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card  -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i> School Project</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project-6</strong> </li>
+            <li>  Grade -11 : Final Fantary </li>
+            <li class="text-muted"> <b> ဆရာ ၊ဆရာမ များအား  နှုတ်ဆက်စကားများပြောခြင်း  </b> လူနည်နည်းနဲ့ မေရောပါတယ်လေ စာတွေရေးရတာ  အချိန်ပိုင်းအတွင်းလုပ်ရတာ အမောပဲ</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- Card  -->
+       <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i>School Project</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project 7</strong></li>
+            <li>Grade-12:မြန်မာကဗျာများ </li>
+             <li>တောင်ငူ</li>
+          </ul>
+        </div>
+       </div>
+
+
+         <!-- Card  -->
+       <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0  h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-school text-secondary"></i>School Project</h5>
+          <ul class="list-unstyled">
+            <li><strong>Project 7</strong></li>
+            <li>Grade-12:English </li>
+            <li>Artificial intelligence</li>
+             <li>Taungoo</li>
+          </ul>
+        </div>
+       </div>
+       
+<!-- Card: Technical Skills Shared -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0 h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-laptop-code me-2"></i>Technical Skills Shared</h5>
+          <ul class="list-unstyled">
+            <li class="py-2"><i class="fas fa-palette text-secondary"></i><strong> Canva App:</strong> Internet connection မကောင်းတဲ့ကြားက သင်ပေးခဲ့တာ/အတူတူလုပ်ခဲ့တာ “သူက video လုပ်ပြီးပြန်ပို့ပေးခဲ့တာလေးတေလုပ်ပြီးပြန်ပို့ပေးခဲ့တာလေးတွေ</li>
+            <li class="py-2"><i class="fas fa-laptop text-secondary"></i><strong> Computer Basic:</strong> ကြောင်းရှင်းပြပေးခဲ့တာ software, hardware</li>
+            <li class="py-2"><i class="fas fa-book-open text-secondary"></i><strong> Notion/Note-Taking:</strong> Note-taking tools တွေ ရှင်းပြပေးခဲ့တာ</li>
+            <li class="py-2"><i class="fas fa-microchip text-secondary"></i><strong> AI/Other Tech Skills:</strong> AI နည်းပညာတွေ၊ တခြား လေ့လာခိုင်းခဲ့တဲ့ skill တွေ</li>
+            <li class="py-2"  ><i class="fas fa-user-plus text-secondary"></i><strong> Teaching:</strong> Online friend ဖြစ်ပေမယ့် နီးနီးကပ်ကပ် ရှင်းပြပေးခဲ့တာ</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card: Our Support System -->
+      <div class="col-md-6 col-lg-5">
+        <div class="card p-4 shadow-sm border-0 h-100">
+          <h5 class="fw-bold text-secondary"><i class="fas fa-hands-helping me-2"></i>Our Support System (အပြန်အလှန်အားပေးမှု)</h5>
+          <ul class="list-unstyled">
+            <li><strong>Encouragement</strong></li>
+            <li class="py-2">[တစ်ယောက်နဲ့တစ်ယောက် အားပေးခဲ့တာ]</li>
+            <li class="py-2"><i class="fas fa-seedling text-secondary"></i> ဘယ်လို ခွန်အားဖြစ်စေခဲ့လဲ - သူနဲ့တွေ့လိုက်ရင် အလိုလို Battery 🔋 💯  ဖြစ်သွားတာမျိုးပါ။</li>
+            <li><strong>Long Conversations:</strong></li>
+            <li class="py-2"> <i class="fab fa-google text-secondary"></i> တစ်ခါတလေ ဖုန်းပြောရင်း၊ Google Meet ခေါ်ရင်း ၂ နာရီလောက်ကြာသွားတာ</li>
+            <li class="py-2">အချိန်ဘယ်လိုကုန်သွားမှန်းမသိအောင် ပျော်ရွှင်ခဲ့တာ</li>
+            <li><strong>Staying Connected:</strong></li>
+            <li class="py-2"> <i class="fab fa-telegram text-secondary"></i> စကားပြောတန်းလန်းကြီးကျန်ခဲ့ရင် Telegram မှာ စာလေးပြန်ပို့ပြီး စိတ်ကျေနပ်မှု ရခဲ့တာ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!-- End Our Memories Section -->
+
+
+<!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../accets/js/script.js"></script>
+    
+</body>
+</html>
+ 
+
